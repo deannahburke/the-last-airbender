@@ -8,7 +8,6 @@ class Character
     @name = data[:name]
     @allies = data[:allies]
     @enemies = data[:enemies]
-    @affiliation = data[:affiliationq]
+    @affiliation = data[:affiliation]
   end
-
 end
