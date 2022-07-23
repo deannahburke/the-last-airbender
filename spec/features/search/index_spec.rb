@@ -8,6 +8,7 @@ RSpec.describe "Members Index Page", type: :feature do
 
     click_button("Search For Members")
 
+    expect(current_path).to eq("/search")
     expect(page).to have_content("Chan (Fire Nation admiral)")
   end
 end

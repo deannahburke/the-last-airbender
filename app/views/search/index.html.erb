@@ -1,7 +1,8 @@
-HELLO, THIS PAGE IS WHERE WE WILL SEE
-total number of people who live in fire nation
-list about first 25 members:
-  -name of member, photo if they have one
-  -list of allies or "none"
-  -list of enemies or "none"
-  -any affliations that member has 
+<h1>Members of Nation</h1>
+<% @characters.each do |character| %>
+  <p>Name: <%= character.name  %></p>
+  <p>Allies: <%= character.allies_format  %></p>
+  <p>Enemies: <%= character.enemies_format  %></p>
+  <p>Affliations: <%= character.affiliation  %></p>
+  <p><img src="<%= character.photo %>"</p>
+<% end %>

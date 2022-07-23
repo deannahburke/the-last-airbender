@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    # require "pry";binding.pry
+    @characters = CharacterFacade.get_details(params[:nation])
   end
 end
