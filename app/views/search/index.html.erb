@@ -1,4 +1,6 @@
 <h1>Members of Nation</h1>
+<h3>Total Members: </h3>
+<h3>Total Per Page: <%= @characters.count %></h3>
 <% @characters.each do |character| %>
   <p>Name: <%= character.name  %></p>
   <p>Allies: <%= character.allies_format  %></p>

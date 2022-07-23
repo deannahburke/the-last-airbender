@@ -6,5 +6,6 @@ RSpec.describe CharacterFacade do
 
     expect(character).to be_an(Array)
     expect(character[0]).to be_an_instance_of(Character)
+    expect(character.length).to eq(25)
   end
 end
